@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Navbar() {
   return (
@@ -74,82 +75,82 @@ function Navbar() {
       <ul className="menu w-full grow pt-20">
         {/* List item */}
         <li>
-          <button className="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Homepage">
+          <Link to="/" className="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Homepage">
             {/* Home icon */}
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeLinejoin="round" strokeLinecap="round" strokeWidth="2" fill="none" stroke="currentColor" className="my-1.5 inline-block size-4"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
             <span className="is-drawer-close:hidden">Homepage</span>
-          </button>
+          </Link>
         </li>
 
         {/* List item */}
         <li>
-          <button className="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Settings">
+          <Link to="/Setting" className="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Settings">
             {/* Settings icon */}
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeLinejoin="round" strokeLinecap="round" strokeWidth="2" fill="none" stroke="currentColor" className="my-1.5 inline-block size-4"><path d="M20 7h-9"></path><path d="M14 17H5"></path><circle cx="17" cy="17" r="3"></circle><circle cx="7" cy="7" r="3"></circle></svg>
             <span className="is-drawer-close:hidden">Settings</span>
-          </button>
+          </Link>
         </li>
         {/* List item */}
 <li>
-  <button className="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Trending">
+  <Link to="/Trending" className="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Trending">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeWidth="2" fill="none" stroke="currentColor" className="my-1.5 inline-block size-4">
       <path strokeLinecap="round" strokeLinejoin="round" d="M3 17l6-6 4 4 8-8"/>
     </svg>
     <span className="is-drawer-close:hidden">Trending</span>
-  </button>
+  </Link>
 </li>
 
 {/* List item */}
 <li>
-  <button className="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Library">
+  <Link to="/Library" className="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Library">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeWidth="2" fill="none" stroke="currentColor" className="my-1.5 inline-block size-4">
       <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 10h16M4 14h16M4 18h16"/>
     </svg>
     <span className="is-drawer-close:hidden">Library</span>
-  </button>
+  </Link>
 </li>
 
 {/* List item */}
 <li>
-  <button className="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="New Releases">
+  <Link to="/NewRelease" className="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="New Releases">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeWidth="2" fill="none" stroke="currentColor" className="my-1.5 inline-block size-4">
       <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4"/>
     </svg>
     <span className="is-drawer-close:hidden">New Releases</span>
-  </button>
+  </Link>
 </li>
 
 {/* List item */}
 <li>
-  <button className="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Top Charts">
+  <Link to="/TopCharts" className="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Top Charts">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeWidth="2" fill="none" stroke="currentColor" className="my-1.5 inline-block size-4">
       <path strokeLinecap="round" strokeLinejoin="round" d="M9 17v-6m4 6V7m4 10V4"/>
     </svg>
     <span className="is-drawer-close:hidden">Top Charts</span>
-  </button>
+  </Link>
 </li>
 
 {/* List item */}
 <li>
-  <button className="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Podcasts">
+  <Link to="/Podcast" className="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Podcasts">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeWidth="2" fill="none" stroke="currentColor" className="my-1.5 inline-block size-4">
       <circle cx="12" cy="11" r="3"/>
       <path strokeLinecap="round" strokeLinejoin="round" d="M5 11a7 7 0 0114 0"/>
       <path strokeLinecap="round" strokeLinejoin="round" d="M12 18v3"/>
     </svg>
     <span className="is-drawer-close:hidden">Podcasts</span>
-  </button>
+  </Link>
 </li>
 
 {/* List item */}
 <li>
-  <button className="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Artists">
+  <Link to="/Artist" className="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Artists">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeWidth="2" fill="none" stroke="currentColor" className="my-1.5 inline-block size-4">
       <circle cx="12" cy="7" r="4"/>
       <path strokeLinecap="round" strokeLinejoin="round" d="M5.5 21a6.5 6.5 0 0113 0"/>
     </svg>
     <span className="is-drawer-close:hidden">Artists</span>
-  </button>
+  </Link>
 </li>
       </ul>
     </div>

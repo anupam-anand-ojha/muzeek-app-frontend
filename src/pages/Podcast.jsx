@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Podcasts() {
+function Podcast() {
   return (
     <div className="p-10 mt-10">
 
@@ -21,4 +21,4 @@ function Podcasts() {
   )
 }
 
-export default Podcasts
+export default Podcast

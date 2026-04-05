@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Settings() {
+function Setting() {
   return (
     <div className="p-10 mt-10">
 
@@ -28,4 +28,4 @@ function Settings() {
   )
 }
 
-export default Settings
+export default Setting
