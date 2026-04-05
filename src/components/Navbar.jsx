@@ -67,7 +67,7 @@ function Navbar() {
     {/* <div className="p-4">Page Content</div> */}
   </div>
 
-  <div className="drawer-side is-drawer-open:overflow-visible fixed  ">
+  <div className="drawer-side is-drawer-open:overflow-visible fixed ">
     <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
     <div className="flex min-h-full flex-col items-start bg-base-300 is-drawer-open:w-20 is-drawer-open:w-64">
       {/* Sidebar content here */}
