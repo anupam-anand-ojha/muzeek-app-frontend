@@ -14,6 +14,8 @@ import NewReleases from "./pages/NewReleases"
 import TopCharts from './pages/Topcharts'
 import Podcast from "./pages/Podcast"
 import Setting from "./pages/Setting"
+import Login from "./pages/Login"
+import SignUp from "./pages/SignUp"
 
 function Home() {
   return (
@@ -41,6 +43,8 @@ function App() {
         <Route path="/TopCharts" element={<TopCharts/>} />
         <Route path="/Podcast" element={<Podcast/>} />
         <Route path="/Setting" element={<Setting/>} />
+        <Route path="/login" element={<Login/>} />
+        <Route path="/signUp" element={<SignUp/>} />
       </Routes>
     </BrowserRouter>
   )

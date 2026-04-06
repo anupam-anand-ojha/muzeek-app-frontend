@@ -3,13 +3,13 @@ import Card from '../components/Card'
 
 function TopCharts() {
   return (
-    <div className="p-10 mt-10">
+    <div className="px20 my-20">
 
-      <h1 className="text-3xl font-bold mb-6">
+      <h1 className="text-3xl font-bold mb-6 px-20 my-20">
         Top Charts
       </h1>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 px-20 my-20">
 
         <Card songName="Top India" />
         <Card songName="Top Global" />

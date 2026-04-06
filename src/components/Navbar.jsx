@@ -24,14 +24,14 @@ function Navbar() {
     />
 
     {/* Login Button */}
-    <button className="btn btn-outline btn-primary">
+    <Link to="/login" className="btn btn-outline btn-primary">
       Login
-    </button>
+    </Link>
 
     {/* Signup Button */}
-    <button className="btn btn-primary">
+    <Link to="/signUp" className="btn btn-primary">
       Sign Up
-    </button>
+    </Link>
 {/* theme change */}
     <label className="flex cursor-pointer gap-2">
   <svg
