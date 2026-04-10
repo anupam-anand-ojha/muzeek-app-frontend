@@ -6,6 +6,7 @@ import Hero from './components/Hero'
 import Herocard from './components/Herocard'
 import Navbar from './components/Navbar'
 import Songs from './components/Songs'
+import UploadMusic from "./components/UploadMusic";
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import Trending from "./pages/Trending"
@@ -26,6 +27,7 @@ function Home() {
       <Artists/>
       <Songs/>
       <Footer/>
+      
     </>
   )
 }
@@ -45,6 +47,8 @@ function App() {
         <Route path="/Setting" element={<Setting/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/signUp" element={<SignUp/>} />
+        <Route path="/upload" element={<UploadMusic />} />
+        <Route path="/artistlogin" element={<ArtistLogin />}/>
       </Routes>
     </BrowserRouter>
   )

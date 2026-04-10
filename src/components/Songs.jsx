@@ -1,23 +1,34 @@
-import Card from "./Card"
+import Card from "./Card";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 function Songs() {
+
+  const [songs, setSongs] = useState([]); 
+
+  useEffect(() => {
+    axios.get("http://localhost:3000/api/music") 
+      .then(res => {
+        console.log(res.data);
+        setSongs(res.data); 
+      })
+      .catch(err => console.log(err));
+  }, []);
+
   return (
-  <div className="cards grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 pl-15 mt-20 pr-5">
-  <Card songName="Relax songs"/>
-  <Card songName="Arijit Hits"/>
-  <Card songName="Workout Mix"/>
-  <Card songName="LoFi Beats"/>
-  <Card songName="Top Bollywood"/>
-  <Card songName="Party Songs"/>
-  <Card songName="Sad Songs"/>
-  <Card songName="Romantic Hits"/>
-  <Card songName="Indie India"/>
-  <Card songName="Punjabi Beats"/>
-  <Card songName="90s Hits"/>
-  <Card songName="Chill Vibes"/>
-</div>
-   
-  )
+    <div className="cards grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 pl-15 mt-20 pr-5">
+      
+      {songs.map((song) => (
+        <Card 
+          key={song._id}
+          songName={song.title}
+          image={song.image}
+          audio={song.url}
+        />
+      ))}
+
+    </div>
+  );
 }
 
-export default Songs
+export default Songs;

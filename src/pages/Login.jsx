@@ -1,24 +1,51 @@
 import React from 'react'
+import API from '../api/axios'
+import { useState } from 'react'
 
 function Login() {
+
+
+  const [form, setform] = useState({
+    email: "",
+    password: ""
+  })
+
+
+  const handlesubmit = async () => {
+    try{
+       const res =  await API.post("/login", form)
+      alert("user login sucessfull")
+      console.log(res.data)
+    }
+    catch(err){
+      console.error(err)
+    }
+  }
+
+  const handlechange = (e) =>{
+    setform({...form, [e.target.name]: e.target.value})
+  }
+  
+
   return (
     <div className="hero bg-base-200 min-h-screen">
   <div className="hero-content flex-col lg:flex-row-reverse">
     <div className="text-center lg:text-left">
       <h1 className="text-5xl font-bold">Login now!</h1>
       <p className="py-6">
-         Sign in to your user account to start listning and sharing your music.           
+        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+        quasi. In deleniti eaque aut repudiandae et a id nisi.
       </p>
     </div>
     <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
       <div className="card-body">
         <fieldset className="fieldset">
           <label className="label">Email</label>
-          <input type="email" className="input" placeholder="Email" />
+          <input name= "email" type="email" className="input" placeholder="Email"  onChange={handlechange}/>
           <label className="label">Password</label>
-          <input type="password" className="input" placeholder="Password" />
+          <input name= "password" type="password" className="input" placeholder="Password" onChange={handlechange} />
           <div><a className="link link-hover">Forgot password?</a></div>
-          <button className="btn btn-neutral mt-4">Login</button>
+          <button className="btn btn-neutral mt-4" onClick={handlesubmit}>Login</button>
         </fieldset>
       </div>
     </div>
