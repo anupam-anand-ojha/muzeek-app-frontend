@@ -27,12 +27,18 @@ function SignUp() {
       navigate("/artistlogin");
     } catch (err) {
       console.log(err.response?.data);
-      alert("Signup failed");
+      alert(err.response?.data?.message || "Signup failed");
     }
   };
 
   return (
-    <div className="hero bg-base-200 min-h-screen">
+
+  
+
+    <div className="hero  min-h-screen" style={{
+    backgroundImage:
+      "url(https://images.unsplash.com/photo-1679746556827-a4722297a613?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjN8fG11c2ljfGVufDB8MHw0fHx8Mg%3D%3D)",
+  }}>
       <div className="card bg-base-100 w-full max-w-sm shadow-2xl">
         <div className="card-body">
 
@@ -87,6 +93,7 @@ function SignUp() {
         </div>
       </div>
     </div>
+  
   );
 }
 

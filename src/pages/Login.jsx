@@ -28,7 +28,10 @@ function Login() {
   
 
   return (
-    <div className="hero bg-base-200 min-h-screen">
+    <div className="hero min-h-screen" style={{
+    backgroundImage:
+      "url(https://images.unsplash.com/photo-1725014880788-9faccc7ca16e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG11c2ljfGVufDB8MHw0fHx8Mg%3D%3D)",
+  }}> 
   <div className="hero-content flex-col lg:flex-row-reverse">
     <div className="text-center lg:text-left">
       <h1 className="text-5xl font-bold">Login now!</h1>
