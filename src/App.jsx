@@ -21,6 +21,7 @@ import SignUp from "./pages/SignUp"
 
 
 
+
   
 
 function Home() {
@@ -30,7 +31,7 @@ function Home() {
   })
   return (
     <>
-    <ReactLenis root />
+   
       <Hero/>
       <Herocard/>
       <ArtistLogin/>
@@ -43,7 +44,9 @@ function Home() {
 }
 
 function App() {
+  
   return (
+     <ReactLenis root >
     <BrowserRouter>
       <Navbar/>
 
@@ -61,6 +64,7 @@ function App() {
         <Route path="/artistlogin" element={<ArtistLogin />}/>
       </Routes>
     </BrowserRouter>
+    </ReactLenis>
   )
 }
 

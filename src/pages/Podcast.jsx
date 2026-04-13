@@ -2,6 +2,7 @@ import React from 'react'
 
 function Podcast() {
   return (
+   <div className='h-screen overflow-hidden bg-cover bg-center bg-no-repeat'style={{ backgroundImage: "url(https://images.unsplash.com/photo-1478737270239-2f02b77fc618?q=80&w=1740&auto=format&fit=crop)" }}>
     <div className="px-20 my-20">
 
       <h1 className="text-3xl font-bold mb-6">
@@ -18,6 +19,8 @@ function Podcast() {
       </ul>
 
     </div>
+    </div>
+    
   )
 }
 
