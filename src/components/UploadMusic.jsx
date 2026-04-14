@@ -19,12 +19,8 @@ function UploadMusic() {
       formData.append("image", image);
 
       const res = await API.post("/api/music/upload", formData, {
-        headers: {
-          "Content-Type": "multipart/form-data"
-        },
-         withCredentials: true
-         
-      });
+       withCredentials: true
+       });
 
       console.log(res.data);
       alert("Song uploaded");

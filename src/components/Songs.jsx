@@ -7,7 +7,7 @@ function Songs() {
   const [songs, setSongs] = useState([]); 
 
   useEffect(() => {
-    axios.get("http://localhost:3000/api/music") 
+    axios.get("https://anupam-music-api.onrender.com/api/music") 
       .then(res => {
         console.log(res.data);
         setSongs(res.data); 
