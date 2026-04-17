@@ -1,16 +1,118 @@
-# React + Vite
+# 🎵 Muzeek App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Muzeek is a full-stack music streaming platform where users can listen to songs and artists can upload and manage their own music.
 
-Currently, two official plugins are available:
+--------------------------------------------------
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+### 🔐 Role-Based Authentication
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+There are two types of users in the app:
 
-## Expanding the ESLint configuration
+### 👤 Normal User
+- Browse songs  
+- Play and listen to music 🎧  
+- Cannot upload songs  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🎤 Artist
+- Upload songs  
+- Add song details (title, thumbnail, etc.)  
+- Manage their uploaded songs  
+
+--------------------------------------------------
+
+## 🛠️ Tech Stack
+
+Frontend:
+- React.js  
+- Axios  
+- React Router  
+
+Backend:
+- Node.js  
+- Express.js  
+
+Database:
+- MongoDB  
+
+Storage:
+- ImageKit / Cloudinary  
+
+--------------------------------------------------
+
+## 📂 Folder Structure
+
+/frontend  
+  /components  
+  /pages  
+  /api  
+
+/backend  
+  /controllers  
+  /routes  
+  /models  
+  /middlewares  
+
+--------------------------------------------------
+
+## ⚙️ Installation & Setup
+
+1. Clone the repository
+
+git clone https://github.com/your-username/muzeek-app.git
+
+2. Install dependencies
+
+Frontend:
+
+cd frontend  
+npm install  
+npm run dev  
+
+Backend:
+
+cd backend  
+npm install  
+npm run dev  
+
+--------------------------------------------------
+
+## 🌐 Deployment
+
+Frontend → Vercel  
+Backend → Render  
+
+--------------------------------------------------
+
+## 📡 API Endpoints
+
+Auth Routes:
+POST /signup  
+POST /login  
+
+Music Routes:
+GET /songs → Get all songs  
+POST /upload → Upload song (Artist only)  
+
+--------------------------------------------------
+
+## 🔒 Access Control
+
+User → Can only listen songs 🎧  
+Artist → Can upload and manage songs 🎤  
+
+--------------------------------------------------
+
+## 💡 Future Improvements
+
+- Playlist feature  
+- Like & Favorite songs  
+- Comments system  
+- AI recommendations  
+
+--------------------------------------------------
+
+## 👨‍💻 Author
+
+Anupam anand
