@@ -2,12 +2,16 @@ import React from 'react'
 import Card from '../components/Card'
 import { useEffect,useState } from 'react'
 import axios from 'axios';
+
+
 function Trending() {
 
   const [songs, setsongs] = useState([]);
 
   useEffect(() => {
-    axios.get
+    axios.get("https://anupam-music-api.onrender.com/api/music")
+      .then(res => setsongs(res.data))
+      .catch(err => console.log(err));
   }, [])
   
   return (
@@ -15,22 +19,15 @@ function Trending() {
     
 
  <div className="cards grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 px-20 my-20 pr-5">
-<Card songName="Bekhayali" />
-<Card songName="Tum Hi Ho" />
-<Card songName="Raataan Lambiyan" />
-<Card songName="Kesariya" />
-<Card songName="Apna Bana Le" />
-<Card songName="Tera Ban Jaunga" />
-<Card songName="Shayad" />
-<Card songName="Agar Tum Saath Ho" />
-<Card songName="Kal Ho Naa Ho" />
-<Card songName="Channa Mereya" />
-<Card songName="Khairiyat" />
-<Card songName="Dil Diyan Gallan" />
-<Card songName="Hawayein" />
-<Card songName="Tujhe Kitna Chahne Lage" />
-<Card songName="Ranjha" />
-    
+
+   {songs.slice(12, 24).map((song) => (
+          <Card 
+            key={song._id}
+            songName={song.title}
+            image={song.image}
+            audio={song.url}
+          />
+        ))}
  </div>
   )
 }
