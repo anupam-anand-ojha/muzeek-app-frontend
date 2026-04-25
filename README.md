@@ -1,118 +1,134 @@
 # 🎵 Muzeek App
 
-Muzeek is a full-stack music streaming platform where users can listen to songs and artists can upload and manage their own music.
+**Muzeek** ek full-stack music streaming platform hai jahan users songs sun sakte hain aur artists apna music upload karke manage kar sakte hain — ek mini Spotify-style system.
 
---------------------------------------------------
+---
 
-## 🚀 Features
+## 🚀 Key Features
 
 ### 🔐 Role-Based Authentication
 
-There are two types of users in the app:
+App me do type ke users hote hain:
 
 ### 👤 Normal User
-- Browse songs  
-- Play and listen to music 🎧  
-- Cannot upload songs  
+
+* Songs browse kar sakta hai
+* Music play karke sun sakta hai
+* Upload access nahi hota
 
 ### 🎤 Artist
-- Upload songs  
-- Add song details (title, thumbnail, etc.)  
-- Manage their uploaded songs  
 
---------------------------------------------------
+* Apne songs upload kar sakta hai
+* Song details add/edit kar sakta hai (title, thumbnail, etc.)
+* Apne uploaded songs ko manage kar sakta hai
+
+---
 
 ## 🛠️ Tech Stack
 
-Frontend:
-- React.js  
-- Axios  
-- React Router  
+### Frontend:
 
-Backend:
-- Node.js  
-- Express.js  
+* React.js
+* Axios
+* React Router
 
-Database:
-- MongoDB  
+### Backend:
 
-Storage:
-- ImageKit / Cloudinary  
+* Node.js
+* Express.js
 
---------------------------------------------------
+### Database:
 
-## 📂 Folder Structure
+* MongoDB
 
-/frontend  
-  /components  
-  /pages  
-  /api  
+### Storage:
 
-/backend  
-  /controllers  
-  /routes  
-  /models  
-  /middlewares  
+* Cloudinary / ImageKit
 
---------------------------------------------------
+---
+
+## 📂 Project Structure
+
+```bash
+/frontend
+  /components
+  /pages
+  /api
+
+/backend
+  /controllers
+  /routes
+  /models
+  /middlewares
+```
+
+---
 
 ## ⚙️ Installation & Setup
 
-1. Clone the repository
+### 1. Clone the repository
 
+```bash
 git clone https://github.com/your-username/muzeek-app.git
+```
 
-2. Install dependencies
+### 2. Install Dependencies
 
-Frontend:
+#### Frontend:
 
-cd frontend  
-npm install  
-npm run dev  
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
-Backend:
+#### Backend:
 
-cd backend  
-npm install  
-npm run dev  
+```bash
+cd backend
+npm install
+npm run dev
+```
 
---------------------------------------------------
+---
 
 ## 🌐 Deployment
 
-Frontend → Vercel  
-Backend → Render  
+* Frontend → Vercel
+* Backend → Render
 
---------------------------------------------------
+---
 
 ## 📡 API Endpoints
 
-Auth Routes:
-POST /signup  
-POST /login  
+### 🔐 Auth Routes
 
-Music Routes:
-GET /songs → Get all songs  
-POST /upload → Upload song (Artist only)  
+* `POST /signup` → User register
+* `POST /login` → User login
 
---------------------------------------------------
+### 🎵 Music Routes
+
+* `GET /songs` → All songs fetch
+* `POST /upload` → Song upload (Artist only)
+
+---
 
 ## 🔒 Access Control
 
-User → Can only listen songs 🎧  
-Artist → Can upload and manage songs 🎤  
+* **User:** Sirf songs sun sakta hai
+* **Artist:** Songs upload aur manage kar sakta hai
 
---------------------------------------------------
+---
 
 ## 💡 Future Improvements
 
-- Playlist feature  
-- Like & Favorite songs  
-- Comments system  
-- AI recommendations  
+* Playlist system
+* Like & Favorite feature
+* Comment system
+* AI-based song recommendations
 
---------------------------------------------------
+---
 
 ## 👨‍💻 Author
 
-Anupam anand
+**Anupam Anand**
